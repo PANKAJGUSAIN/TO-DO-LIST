@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6d65aca24c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>TO-DO LIST</title>
+</head>
+<body>
+    <section>
+        <div id='main-container'>  
+            <h1 class="mb-45">To-Do APP</h1>
+            <hr>   
+            <div class="form-container">
+                <form method="GET" action='/deatils'>
+                    <div id="Description">
+                        <span>Description</span>
+                        <input type="text" name="item-name" placeholder="What do you need to do?" required>
+                    </div>
+                    <div id="data">
+                        <div id="Category">
+                            <span>Category</span> 
+                                <select name="type" >
+                                    <option value="Personal">Personal</option>
+                                    <option value="work">Work</option>
+                                    <option value="school">school</option>
+                                    <option value="cleaning">cleaning</option>
+                                    <option value="shopping">shopping</option>
+                                    <option value="other">other</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div id="Due-date">
+                            <span>Due Date</span>
+                            <input type="date" name="date">
+                        </div>
+                    </div>
+                    <!--div>
+                        <span>Amount</span>
+                        <input type="number" name="amount" placeholder="How much?">
+                    </div--> 
+                    <div id="button">
+                        <button type="submit">+ Add Task</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="form-container">
+                <ul>
+                    <li>
+                        <div class="data-entry">
+                            <p>Description</p>
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="calender">
+                            <i class="far fa-calendar-minus"></i>
+                            <p>Date</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="data-entry">
+                            <p>Description</p>
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="calender">
+                            <i class="far fa-calendar-minus"></i>
+                            <p>Date</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -6,6 +6,7 @@ const path=require('path')
 const db=require('./config/mongoose');
 const Todo=require('./models/todo');
 //
+app.use(express.urlencoded())
 app.use('/',require('./routes/index'));
 //
  app.set('view engine','ejs');

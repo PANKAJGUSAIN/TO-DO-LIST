@@ -1,13 +1,17 @@
 const mongoose=require('mongoose');
 const TodoSchema = new mongoose .Schema({
-    name :{
+    itemname :{
         type:String,
         required:true
     },
 
-    phone :{
+    type:{
         type:String,
         required :true
+    },
+    date:{
+        type:String,
+        required:true
     }
 });
 

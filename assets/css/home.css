@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+.mb-45{
+    margin-bottom:1.2rem;
+}
+
+hr{ 
+    position: relative;
+    color:teal;
+    width:90%;
+    left:5%;
+}
+
+body{
+    background-image:url('/images/form_background.jpg');
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#main-container{
+    margin: auto;
+    margin-top:5rem;
+    height:auto;
+    width:90vh;
+    background-color: white;
+    border-radius:10px;
+}
+#main-container h1{
+    padding-top:10px;
+    font-size:2.5rem;
+    text-align: center;
+}
+
+/*user form*/
+
+.form-container{
+    margin-left:20px;
+    padding-top: 10px;
+}
+
+.form-container form{
+    margin-bottom:20px;
+}
+form span{
+    color:teal;
+}
+
+input{
+    border:none;
+    border-bottom:1.5px solid palevioletred;
+}
+
+#Description{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+#Description input{
+    margin-left:10px;
+    width:40vh;
+}
+#data{
+    display: flex;
+}
+
+#Category{
+
+    font-size:2rem;
+    margin-bottom:20px;
+    border-right:1.5px solid palevioletred;
+    padding-right:10px;
+}
+
+#Category select{
+    display: inline-block;
+    margin-left:5px;
+    width:20vh;
+    border:none;
+    border-bottom:1.5px solid palevioletred;
+}
+
+#Due-date{
+    font-size:2rem;
+    margin-left:10px;
+}
+
+#Due-date input{
+    margin-left:10px;
+}
+
+#button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+form button[type="submit"]{
+  height:50px;
+  width:150px;
+  margin-top:10px;
+  border-radius:20px;
+  font-size:1.2rem;
+  color: white;
+  background-image:linear-gradient(rgb(29, 29, 29),rgb(27, 27, 82));
+}
+
+/* user form ends */
+
+/* display data starts */
+ul{
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+li:hover{
+    background-color: rgb(231, 222, 222);
+    width:540px;
+    border-radius:5px;
+}
+
+.data-entry{
+    height:20px;
+    width:400px;
+    margin-left:10px;
+    padding-top: 10px;
+    font-size:1.5rem;
+    color:gray;
+    display: inline-block;
+}
+
+.data-entry p{
+    display: inline-block;
+}
+
+.data-entry i{
+    position: relative;
+    left:95%;
+    color:black;
+    display: inline-block;
+    transition: 1s ease-in-out;
+}
+.data-entry i:hover{
+    color: red;
+    transform: rotate(360deg);
+}
+
+.calender{
+    display:block;
+    margin-left: 10px;
+    padding-top:5px;
+}
+
+.calender i{
+    display: inline-block;
+    font-size:20px;
+    margin-bottom:10px;
+    color: crimson;
+}
+.calender p{
+    display: inline-block;
+    margin-left:5px;
+    font-size:1rem;
+    font-weight:500;
+    color: lightslategray;
+
+}
+/*display data ends */
+

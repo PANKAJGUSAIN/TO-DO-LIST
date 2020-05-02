@@ -4,6 +4,7 @@ const port=8000;
 const path=require('path')
 //
 const db=require('./config/mongoose');
+const Todo=require('./models/todo');
 //
 app.use('/',require('./routes/index'));
 //

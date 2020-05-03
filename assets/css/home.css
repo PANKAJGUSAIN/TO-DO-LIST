@@ -25,6 +25,7 @@ body{
 #main-container{
     margin: auto;
     margin-top:5rem;
+    padding-bottom:10px;
     height:auto;
     width:90vh;
     background-color: white;
@@ -41,9 +42,11 @@ body{
 .form-container{
     margin-left:20px;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form-container form{
+    margin-left:20px;
     margin-bottom:20px;
 }
 form span{
@@ -115,35 +118,36 @@ ul{
     list-style: none;
 }
 
-li{
-    margin-bottom: 10px;
+li{ margin-left:10px;
+    width:80vh;
+    margin-bottom:10px;
+    background-color: seashell;
+  
+    border-radius:10px;
 }
 
 li:hover{
-    background-color: rgb(231, 222, 222);
-    width:570px;
-    border-radius:5px;
+    background-color:transparent;
+    /*border:2px dashed salmon;*/
 }
 
 .data-entry{
-    height:20px;
-    width:400px;
+    height:30px;
+    width:550px;
     margin-left:20px;
     padding-top:10px;
-    font-size:1.5rem;
     color:gray;
-    display: inline-block;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
 }
-
 .data-entry p{
-    display: inline-block;
+    font-size:1.5rem;
 }
 
 .data-entry i{
-    position: relative;
-    left:95%;
+    font-size:20px;
     color:black;
-    display: inline-block;
     transition: 1s ease-in-out;
 }
 .data-entry i:hover{
@@ -159,6 +163,7 @@ li:hover{
 
 .calender i{
     display: inline-block;
+    line-height:30px;
     font-size:20px;
     margin-bottom:10px;
     color: crimson;

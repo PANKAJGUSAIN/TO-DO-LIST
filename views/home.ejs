@@ -21,7 +21,7 @@
                     <div id="data">
                         <div id="Category">
                             <span>Category</span> 
-                                <select name="type" >
+                                <select name="type" required>
                                     <option value="Personal">Personal</option>
                                     <option value="work">Work</option>
                                     <option value="school">school</option>
@@ -33,7 +33,7 @@
                         </div>
                         <div id="Due-date">
                             <span>Due Date</span>
-                            <input type="date" name="date">
+                            <input type="date" name="date" required>
                         </div>
                     </div>
                     <!--div>
@@ -51,8 +51,11 @@
                     <% for (let i of todo_list){ %>
                     <li>
                         <div class="data-entry">
-                            <p><%= i.itemname %></p>
+                            <p id='item name'><%= i.itemname %></p>
+                            <p id="type"><%= i.type %></p>
+                            <a href="/delete-todo/?id=<%= i._id%>">
                             <i class="fas fa-times"></i>
+                            </a>
                         </div>
                         <div class="calender">
                             <i class="far fa-calendar-minus"></i>

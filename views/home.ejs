@@ -48,28 +48,18 @@
             <hr>
             <div class="form-container">
                 <ul>
+                    <% for (let i of todo_list){ %>
                     <li>
                         <div class="data-entry">
-                            <p>Description</p>
+                            <p><%= i.itemname %></p>
                             <i class="fas fa-times"></i>
                         </div>
                         <div class="calender">
                             <i class="far fa-calendar-minus"></i>
-                            <p>Date</p>
+                            <p><%= i.date %></p>
                         </div>
                     </li>
-
-                    <li>
-                        <div class="data-entry">
-                            <p>Description</p>
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <div class="calender">
-                            <i class="far fa-calendar-minus"></i>
-                            <p>Date</p>
-                        </div>
-                    </li>
-
+                    <%}%>
                 </ul>
             </div>
         </div>

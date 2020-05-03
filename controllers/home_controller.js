@@ -1,11 +1,18 @@
-//const express=require('express');
 const Todo=require('../models/todo');
-//const app=express();
 
 // home
 module.exports.home =function(req,res){
-    return res.render('home');
-}
+    Todo.find({},function(err,todo){
+        console.log(todo)
+        if (err){
+            console.log('error occured while fetching data',err);
+            return
+        }
+        return res.render('home',{
+        todo_list : todo
+        });
+    });
+    }
 
 //for taking data
 module.exports.details =function(req,res){
@@ -15,8 +22,8 @@ module.exports.details =function(req,res){
             return console.log('error occured',err)
         }
 
-        console.log('****',newTodo);
-        console.log('Data sent successfully')
-        return res.render('home');
+        else{
+        return res.redirect('back');
+        }
     });
 }
